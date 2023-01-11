@@ -18,10 +18,9 @@ enum MyPet {
     
 }
 
-
 struct ContentView: View {
-    var pepe: Friend = Friend(name: "pepe", pet: MyPet.cat("coco"))
-    var mimi: Friend = Friend(name: "mimi", pet: MyPet.cat("titi2"))
+    var pepe: Friend = Friend(name: "pepe", pet: MyPet.dog("coco"))
+    var mimi: Friend = Friend(name: "mimi", pet: MyPet.cat("titi"))
     
     @State var pet: String = " 제 절친의 애완동물은요?"
     
@@ -36,12 +35,19 @@ struct ContentView: View {
                 }
             } label: {
                 Text("Push")
-                
             }
         }
     }
     
-    func getPetName()
+    
+    func getPetName(_ petName: MyPet) -> String {
+        switch petName {
+        case .dog(let nickName):
+            return nickName
+        case .cat(let nickName):
+            return nickName
+        }
+    }
     
     
 }
