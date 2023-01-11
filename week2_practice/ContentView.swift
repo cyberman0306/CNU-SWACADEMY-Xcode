@@ -30,7 +30,6 @@ struct ContentView: View {
             Button {
                 if let petName = mimi.pet {
                     pet = getPetName(petName)
-                    
                 } else {
                     pet = "애완동물이 없습니다"
                 }
