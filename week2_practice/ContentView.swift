@@ -28,9 +28,22 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text(pet)
-            
+            Button {
+                if let petName = mimi.pet {
+                    pet = getPetName(petName)
+                } else {
+                    pet = "애완동물이 없습니다"
+                }
+            } label: {
+                Text("Push")
+                
+            }
         }
     }
+    
+    func getPetName()
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
