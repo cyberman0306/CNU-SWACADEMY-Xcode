@@ -14,6 +14,7 @@
 		F37FAC57297627010041A4C1 /* caffeineHolic_test2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37FAC56297627010041A4C1 /* caffeineHolic_test2Tests.swift */; };
 		F37FAC61297627010041A4C1 /* caffeineHolic_test2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37FAC60297627010041A4C1 /* caffeineHolic_test2UITests.swift */; };
 		F37FAC63297627010041A4C1 /* caffeineHolic_test2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37FAC62297627010041A4C1 /* caffeineHolic_test2UITestsLaunchTests.swift */; };
+		F37FAC70297630B10041A4C1 /* CaffineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37FAC6F297630B10041A4C1 /* CaffineModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F37FAC5C297627010041A4C1 /* caffeineHolic_test2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = caffeineHolic_test2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37FAC60297627010041A4C1 /* caffeineHolic_test2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caffeineHolic_test2UITests.swift; sourceTree = "<group>"; };
 		F37FAC62297627010041A4C1 /* caffeineHolic_test2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caffeineHolic_test2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F37FAC6F297630B10041A4C1 /* CaffineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffineModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				F37FAC45297627000041A4C1 /* caffeineHolic_test2App.swift */,
 				F37FAC47297627000041A4C1 /* ContentView.swift */,
+				F37FAC6F297630B10041A4C1 /* CaffineModel.swift */,
 				F37FAC49297627010041A4C1 /* Assets.xcassets */,
 				F37FAC4B297627010041A4C1 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				F37FAC48297627000041A4C1 /* ContentView.swift in Sources */,
 				F37FAC46297627000041A4C1 /* caffeineHolic_test2App.swift in Sources */,
+				F37FAC70297630B10041A4C1 /* CaffineModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +429,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +459,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
