@@ -7,28 +7,24 @@
 
 import SwiftUI
 
-
 struct ContentView: View {
     @State private var dailyList = ["First", "Second"]
-    var caffine:CaffeineModel = CaffeineModel()
-    
-    func incList() {
-        dailyList.insert("New", at: 0)
-    }
+    @State var result:Bool = true
+    @State var caffeine:CaffeineModel = CaffeineModel()
     
     func incCoffee() {
-        dailyList.insert("Get Some Coffee", at: 0)
-        caffine.doWakening()
+        //dailyList.insert("Get Some Coffee", at: 0)
+        (result, dailyList) = caffeine.doWakening()
     }
     
     func incStress() {
-        dailyList.insert("Stress Up", at: 0)
-        caffine.doStress()
+        //dailyList.insert("Stress Up", at: 0)
+        (result, dailyList) = caffeine.doStress()
     }
     
     func getRest() {
-        dailyList.insert("REST", at: 0)
-        caffine.doRest()
+        //dailyList.insert("REST", at: 0)
+        (result, dailyList) = caffeine.doRest()
     }
     
     var DailyView: some View {
@@ -54,15 +50,16 @@ struct ContentView: View {
                 Spacer()
                 Button("Top button") {
                     print("Top Button Click")
+                    (result, dailyList) = caffeine.doReset()
                 }
                 .padding()
             }
             
             Spacer()
-            Image(caffine.getStateImg())
+            Image(caffeine.getStateImg())
                 .resizable()
-                .frame(width: caffine.imgFrame.width,
-                       height: caffine.imgFrame.height)
+                .frame(width: caffeine.imgFrame.width,
+                       height: caffeine.imgFrame.height)
             
             Button("Get Stress") {
                 incStress()
@@ -84,8 +81,6 @@ struct ContentView: View {
         }
         .padding()
     }
-    
-
     
     var body: some View {
         ZStack {
